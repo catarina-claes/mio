@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0017"
+    tools:context=".Create">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient_drawable"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/justlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="3dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/point_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/profile"
+            android:paddingVertical="3dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/justlayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="3dp"
+            android:layout_marginTop="6dp"
+            android:paddingVertical="3dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="name:"/>
+
+            <EditText
+                android:id="@+id/name_of_mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:text=""
+                android:textColorHint="#D5EFDAE9"
+                android:hint="name of mission"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="3dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="time:"/>
+
+            <EditText
+                android:id="@+id/time_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border2"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textColorHint="#D5EFDAE9"
+                android:hint="day"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/time_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border2"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textColorHint="#D5EFDAE9"
+                android:hint="hour"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/time_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border2"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textColorHint="#D5EFDAE9"
+                android:hint="min"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="3dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="class:"/>
+
+            <EditText
+                android:id="@+id/dcbas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textColorHint="#D5EFDAE9"
+                android:hint="D/C/B/A/S"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="3dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="task:"/>
+
+            <EditText
+                android:id="@+id/task_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textColorHint="#D5EFDAE9"
+                android:hint="your task's detail"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D0015"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/buy_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button"
+            android:onClick="start"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
